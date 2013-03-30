@@ -46,15 +46,15 @@
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <div class="footer-container">
-            <footer class="wrapper">
-            </footer>
-        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/vendor/okvideo.js"></script>
-        <script src="js/main.js"></script>
+        <script>
+            $(function(){
+              $.okvideo({ video: '5FqAAi4cxKA' }) // [:id] refers to a YouTube or Vimeo ID
+            });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
